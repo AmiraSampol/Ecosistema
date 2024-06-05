@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ecosistema SAMPOL</title>
+    <link rel="icon" type="image/png" href="/images/faviconSampol.png" />
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link href="style-sidebar.css" rel="stylesheet" type="text/css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="path/to/font-awesome/css/font-awesome.min.css"
+    />
+    <link
+      href="https://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css"
+      rel="stylesheet"
+      id="bootstrap-css"
+    />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+  </head>
+
+  <body>
+    <div class="left-section" style="overflow: hidden" >
+      <header style="text-align: -webkit-right">
+        <div
+          class="w3-sidebar w3-bar-block w3-card w3-animate-left sidenav"
+          style="background-color: transparent; width: 76px;"
+          id="leftMenu"
+          onmouseover="overLeft()" onmouseleave="outLeft()"
+        >
+          <ul style="text-align: justify">
+            <li>
+              <button
+                class="w3-button w3-xlarge w3-left grad-left"
+                style="width: 100%"
+                onclick="openLeftMenu()"
+              >
+                &#9776;
+              </button>
+            </li>
+            <li>
+              <a style="white-space: nowrap" href="https://login.captio.net/"
+                ><img class="side-icon" src="./images/captio.svg" />
+                <span class="name-link">Captio</span>
+              </a>
+            </li>
+            <li>
+              <a
+                style="white-space: nowrap"
+                href="https://app.sesametime.com/employee/portal"
+              >
+                <img class="side-icon" src="./images/sesame.svg" />
+                <span class="name-link"> Sesame</span>
+              </a>
+            </li>
+            <li>
+              <a
+                style="white-space: nowrap"
+                href="https://apps.sampol.com/logon/LogonPoint/index.html"
+              >
+                <img class="side-icon" src="./images/citrix.svg" />
+                <span class="name-link"> Citrix</span>
+              </a>
+            </li>
+            <li>
+              <a
+                style="white-space: nowrap"
+                href="https://sampolcampus.moodlecloud.com/login/index.php"
+              >
+                <img class="side-icon" src="./images/moodle.svg" />
+                <span class="name-link"> Campus</span>
+              </a>
+            </li>
+            <li>
+              <a
+                style="white-space: nowrap"
+                href="https://sampol.my.salesforce.com/"
+                ><img class="side-icon" src="./images/salesforce.svg" />
+                <span class="name-link">SalesForce </span>
+              </a>
+            </li>
+            <li>
+              <a style="white-space: nowrap" href="https://sampol.egnyte.com/">
+                <img class="side-icon" src="./images/egnyte.svg" />
+                <span class="name-link"> Egnyte</span>
+              </a>
+            </li>
+            <li>
+              <a style="white-space: nowrap" href="https://ubuntuweb/">
+                <img class="side-icon" src="./images/irisLogoColor.png" />
+                <span class="name-link"> Iris</span>
+              </a>
+            </li>
+            <li>
+              <a
+                style="white-space: nowrap"
+                href="https://sampol.sharepoint.com/sites/Dashboards"
+              >
+                <img class="side-icon" src="./images/power-bi.jpg" />
+                <span class="name-link"> Datos</span>
+              </a>
+            </li>
+            <li>
+              <a
+                style="white-space: nowrap"
+                href="https://sampol.sharepoint.com/sites/PortalSolicitudes"
+              >
+                <img class="side-icon" src="./images/solicitudes.svg" />
+                <span class="name-link"> Solicitudes</span>
+              </a>
+            </li>
+            <li>
+              <a
+                style="white-space: nowrap"
+                href="https://incidencias.sampol.com/"
+              >
+                <img class="side-icon" src="./images/incidencias_2.svg" />
+                <span class="name-link"> Incidencias</span>
+              </a>
+            </li>
+            <li>
+              <a
+                style="white-space: nowrap"
+                href="https://teams.microsoft.com/l/entity/a6b63365-31a4-4f43-92ec-710b71557af9/_djb2_msteams_prefix_1143321584?context=%7B%22channelId%22%3A%2219%3A2ad62507ad5e4953aa452c77d595f9bd%40thread.tacv2%22%7D&tenantId=8723e25f-512e-4b45-ba24-cd2c9a55108e"
+              >
+                <img class="side-icon" src="./images/sugerencias.svg" />
+                <span class="name-link"> Sugerencias</span>
+              </a>
+            </li>
+            <li>
+              <a style="white-space: nowrap" href="javascript:openModal();">
+                <img class="side-icon" src="./images/canalDenuncia.svg" />
+                <span class="name-link"> Denuncias</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div
+          class="w3-sidebar w3-bar-block w3-card w3-animate-right"
+          style="
+            background-color: transparent;
+            color: white;
+            width: 70px;
+            right: 0;
+            overflow: hidden;
+          "
+          onmouseover="overRight()" onmouseleave="outRight()"
+          id="rightMenu"
+        >
+          <button
+            class="w3-button w3-xlarge w3-right grad-left"
+            style="width: 100%"
+            onclick="RightMenu()"
+          >
+            &#9776;
+          </button>
+          <b class="user-name" id="userName"></b>
+          <div style="display: flex">
+            <h2 class="eventos">EVENTOS</h2>
+            <ul id="cards" class="cards"></ul>
+          </div>
+        </div>
+        <div class="options">
+          <button
+            type="button"
+            id="entra"
+            class="btn btn-primary btn-change entra"
+            style="display: none"
+            onclick="login(1)"
+          >
+            Entra
+          </button>
+        </div>
+      </header>
+      <main style="display: flex">
+        <div class="container col-10">
+          <div class="searchlogo">
+            <a href="https://www.sampol.com/"
+              ><img src="./images/logo_sampol_b.svg" alt="Logo SAMPOL White"
+            /></a>
+          </div>
+          <div class="searcher">
+            <span class="search-logo"><ion-icon name="search"></ion-icon></span>
+            <!-- https://www.google.com/search?q= -->
+            <input type="text" id="search-input" />
+            <!-- <button><span class="micro-logo"><ion-icon name="mic"></ion-icon></span></button> -->
+            <!-- <button><span class="camera-logo"><ion-icon name="camera"></ion-icon></span></button> -->
+          </div>
+          <div class="searcher-buttons">
+            <button id="search-button">Buscar con Google</button>
+          </div>
+
+          <div class="marquee">
+            <p id="corpmsg">
+            </p>
+          </div>
+          <div class="weather">
+            <a
+              class="weatherwidget-io"
+              href="https://forecast7.com/es/39d572d65/palma/"
+              data-label_1="PALMA"
+              data-days="3"
+              data-theme="original"
+              data-basecolor=""
+              >PALMA</a
+            >
+          </div>
+        </div>
+      </main>
+    </div>
+    <!-- <div class="right-section"> 
+        <iframe class="web-page" src="https://cloud.woxidigital.com/frontend/mobile/index.html"
+            frameborder="0"></iframe>
+    </div> -->
+
+    <div id="myModal" class="modal">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2>Denuncias Sampol</h2>
+        </div>
+        <div class="modal-body">
+          <h5>Sampol Grupo Corporativo:</h5>
+          <p>
+            <a
+              style="color: black !important"
+              href="https://sampol.ulisesgrc.net/#/channels/sampol/ES_ES/"
+              class="tooltip-test"
+              title="Tooltip"
+              >Denuncia Sampol Grupo Corporativo</a
+            >
+          </p>
+          <hr />
+          <h5>Sampol Distribución:</h5>
+          <p>
+            <a
+              style="color: black !important"
+              href="https://sampol.ulisesgrc.net/#/channels/distribucionelectrica/ES_ES/"
+              class="tooltip-test"
+              title="Tooltip"
+              >Denuncia Sampol Distribución</a
+            >
+          </p>
+          <hr />
+          <h5>Sampol Agropecuaria:</h5>
+          <p>
+            <a
+              style="color: black !important"
+              href="https://sampol.ulisesgrc.net/#/channels/agropecuaria/ES_ES/"
+              class="tooltip-test"
+              title="Tooltip"
+              >Denuncia Sampol Agropecuaria</a
+            >
+          </p>
+          <hr />
+        </div>
+        <div class="modal-footer">
+          <button id="closeButton" class="close-Button">Cerrar</button>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      !(function (d, s, id) {
+        var js,
+          fjs = d.getElementsByTagName(s)[0];
+        if (!d.getElementById(id)) {
+          js = d.createElement(s);
+          js.id = id;
+          js.src = "https://weatherwidget.io/js/widget.min.js";
+          fjs.parentNode.insertBefore(js, fjs);
+        }
+      })(document, "script", "weatherwidget-io-js");
+    </script>
+    <script src="https://alcdn.msauth.net/browser/2.15.0/js/msal-browser.min.js"></script>
+
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@microsoft/microsoft-graph-client/lib/graph-js-sdk.js"
+    ></script>
+    <!-- polyfilling promise -->
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/es6-promise/dist/es6-promise.auto.min.js"
+    ></script>
+
+    <!-- polyfilling fetch -->
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/whatwg-fetch/dist/fetch.umd.min.js"
+    ></script>
+
+    <!-- depending on your browser you might wanna include babel polyfill -->
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@babel/polyfill@7.4.4/dist/polyfill.min.js"
+    ></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/js/bootstrap.min.js"
+      integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd"
+      crossorigin="anonymous"
+    ></script>
+    <script type="text/javascript" src="./auth.js"></script>
+
+    <script>
+      // Función para realizar la búsqueda en Google
+      function searchGoogle() {
+        var searchInputValue = document.getElementById("search-input").value;
+        var googleSearchURL =
+          "https://www.google.com/search?q=" +
+          encodeURIComponent(searchInputValue);
+        window.location.href = googleSearchURL;
+      }
+
+      // Asigna la función al evento de clic del botón
+      document
+        .getElementById("search-button")
+        .addEventListener("click", searchGoogle);
+
+      // Asigna la función al evento de tecla presionada en el input
+      document
+        .getElementById("search-input")
+        .addEventListener("keyup", function (event) {
+          // Verifica si la tecla presionada es "Enter" (código 13)
+          if (event.keyCode === 13) {
+            searchGoogle();
+          }
+        });
+
+      // MODAL
+      // Mostrar el modal cuando se hace clic en el icono de "Denuncia"
+      function openModal() {
+        var modal = document.getElementById("myModal");
+        modal.style.display = "block";
+
+        // Agregar overflow: hidden al body
+        document.body.style.overflow = "hidden";
+      }
+
+      // Ocultar el modal cuando se hace clic en el botón de cerrar (x)
+      function closeModal() {
+        var modal = document.getElementById("myModal");
+        modal.style.display = "none";
+
+        // Restaurar overflow al body
+        document.body.style.overflow = "auto";
+      }
+
+      // Cierra el modal si se hace clic fuera de él
+      window.onclick = function (event) {
+        var modal = document.getElementById("myModal");
+        if (event.target == modal) {
+          modal.style.display = "none";
+          // Restaurar overflow al body
+          document.body.style.overflow = "auto";
+        }
+      };
+
+      // Agregar evento clic al botón "Cerrar"
+      var closeButton = document.getElementById("closeButton");
+      if (closeButton) {
+        closeButton.addEventListener("click", closeModal);
+      }
+
+      // Muestra el banner después de un tiempo (por ejemplo, 3 segundos)
+      setTimeout(function () {
+        document.getElementById("banner").classList.add("show");
+      }, 3000);
+
+      // Esta función inicia una solicitud al feed RSS y lo procesa.
+      function loadRSSFeed() {
+        fetch("https://www.diariodemallorca.es/rss/section/2614")
+          .then((response) => response.text())
+          .then((str) =>
+            new window.DOMParser().parseFromString(str, "text/xml")
+          )
+          .then((data) => {
+            const items = data.querySelectorAll("item");
+            let newsHtml = "";
+            items.forEach((el) => {
+              newsHtml += el.querySelector("title").textContent + " · ";
+            });
+            document.getElementById("news-content").innerHTML = newsHtml;
+          })
+          .catch((error) => console.error("Error al cargar el RSS:", error));
+      }
+      // Inicia la función cuando la página web se carga.
+      function openLeftMenu() {
+        const menu = document.getElementById("leftMenu");
+        menu.classList.toggle("openSide");
+      }
+
+      function RightMenu() {
+        const menu = document.getElementById("rightMenu");
+        menu.classList.toggle("openSide");
+      }
+
+      function overLeft() {
+        const menu = document.getElementById("leftMenu");
+        menu.classList.add("openSide");
+      }
+
+      function outLeft() {
+        const menu = document.getElementById("leftMenu");
+        menu.classList.remove("openSide");
+      }
+
+      function overRight() {
+        const menu = document.getElementById("rightMenu");
+        menu.classList.add("openSide");
+      }
+
+      function outRight() {
+        const menu = document.getElementById("rightMenu");
+        menu.classList.remove("openSide");
+      }
+      
+      document.addEventListener("DOMContentLoaded", login(0));
+    </script>
+    <script>
+      $("#menu-toggle").click(function (e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+      });
+    </script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>

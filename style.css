@@ -1,0 +1,541 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-image: url(./images/2560x1440_conexiones.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+}
+
+/*---------------------------------- Screen Left ------------------------------------------*/
+.left-section {
+    width: 100%;
+    height: 100vh;
+
+}
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(255, 57, 57, 0.3); 
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(255, 255, 255, 0.5); 
+}
+
+main {
+    position: relative;
+    top: 10%; 
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    /* background-color: teal; */
+}
+
+main .container {
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    width: 70%;
+    /* background-color: indianred; */
+}
+
+main .container figure {
+    height: 200px;
+
+}
+
+main .container img {
+    width: 100%;
+    /* width: 100%; */
+}
+
+main .container .searcher {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    height: 40px;
+    width: 600px;
+    padding: 8px 12px;
+    border: 1px solid darkgray;
+    border-radius: 24px;
+}
+
+main .container .searcher button {
+    border: none;
+    background-color: transparent;
+}
+
+main .container .searcher input {
+    width: 100%;
+    color: whitesmoke;
+    border: none;
+    background-color: transparent;
+}
+
+.search-logo {
+    color: darkgray;
+    width: 18px;
+    height: 18px;
+}
+
+.micro-logo {
+    color: darkgray;
+    width: 18px;
+    height: 18px;
+}
+
+.camera-logo {
+    color: darkgray;
+    width: 18px;
+    height: 18px;
+}
+
+main .container .searcher-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+main .container .searcher-buttons button {
+    border: none;
+    border-radius: 4px;
+    background-color: #001382;
+    padding: 12px;
+    color: whitesmoke;
+}
+
+main .container .searcher-buttons button:hover {
+    cursor: pointer;
+}
+
+main .container .searcher input {
+    outline: none;
+    /* Elimina el contorno al obtener el foco */
+}
+.sidenav{
+    background-color: transparent;
+    overflow-y: visible !important;
+    overflow-x: hidden !important;
+}
+ul{
+    color: white;
+    list-style-type: none;
+
+}
+.eventos{
+    transform: rotate(-90deg);
+     color: white;
+     margin: 560px -40px;
+ }
+ .cards{
+    margin-top: 370px;
+    margin-left: -124px;
+}
+.date-card{
+    width: 236px;
+}
+.user-name{
+    margin: 80px;
+    white-space: nowrap;
+}
+
+.hide{
+    display: none
+}
+a{
+    color: white !important;
+    text-decoration: none !important;
+}
+
+/*---------------------------------- Marquee ------------------------------------------*/
+.marquee {
+    width: 30em;
+    line-height: 25px;
+    background-color: transparent;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    white-space: nowrap;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.marquee p {
+    display: inline-block;
+    margin-left: 100%;
+    animation: marquee 60s linear infinite;
+}
+
+@keyframes marquee {
+    0% {
+        transform: translate(0%);
+    }
+
+    100% {
+        transform: translate(-100%);
+    }
+}
+
+/* --------------------------------- Banner Image --------------------------------------------*/
+.banner-image {
+    display: flex;
+    justify-content: center;
+    /* background-color: aqua; */
+    width: 60%;
+    height: 10em;
+}
+
+/*.banner-image img {
+    width: 100%;
+    height: 100%;
+}*/
+
+/*--------------------------------- Modal ----------------------------------------------------*/
+/* Estilos para el modal */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.modal-content {
+    background-color: #fff;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 60%;
+    max-width: 600px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+}
+
+.modal-header {
+    padding: 10px;
+    text-align: center;
+}
+
+/* .close {
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover {
+    color: #f00;
+} */
+
+.modal-body {
+    padding: 20px;
+}
+
+/* Estilos para los encabezados dentro del modal */
+.modal-body h5 {
+    font-size: 18px;
+    margin-top: 0;
+}
+
+/* Estilos para los enlaces dentro del modal */
+.modal-body a {
+    text-decoration: none;
+    color: #007bff;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.modal-body a:hover {
+    text-decoration: underline;
+}
+
+.modal-footer {
+    text-align: end;
+}
+
+.modal-footer .close-Button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.modal-footer .close-Button:hover {
+    background-color: #0056b3;
+}
+.cardInfo{
+    overflow:hidden;
+    white-space:nowrap;
+    width: 240px;
+    text-align: left;
+    margin-right: 55px;
+}
+.card{
+    background-color: transparent !important;
+    color: white;
+    margin-left:50%;
+    text-decoration:none;
+
+}
+
+.openSide{
+ width: 320px !important;
+}
+/*---------------------------------- RESPONSIVE ---------------------------------------------*/
+
+@media screen and (max-width: 600px) {
+    .searcher {
+        flex-direction: column;
+        /* Cambia la disposición a columna en pantallas pequeñas */
+    }
+
+    .searcher input {
+        margin-left: 0;
+        /* Elimina el margen izquierdo en pantallas pequeñas */
+        margin-top: 8px;
+        /* Agrega espacio entre el ícono de búsqueda y el campo de entrada en pantallas pequeñas */
+    }
+
+    .searcher-buttons {
+        flex-direction: row;
+        /* Cambia la disposición a fila en pantallas pequeñas */
+    }
+
+    .searcher-buttons button {
+        width: auto;
+        /* Vuelve al ancho automático en pantallas pequeñas */
+        margin-top: 0;
+        /* Elimina el espacio entre los botones en pantallas pequeñas */
+        margin-right: 8px;
+        /* Agrega espacio entre los botones en pantallas pequeñas */
+    }
+
+}
+
+@media screen and (max-width: 1170px) {
+    main .container {
+        /* Ajusta el tamaño y el espacio según sea necesario */
+        gap: 40px;
+        margin-right: auto;
+    }
+
+    main .container figure {
+        height: 150px;
+        /* Tamaño más pequeño para tabletas */
+    }
+
+    main .container figure img {
+        height: 100%;
+        /* Ajusta si es necesario */
+    }
+
+    main .container .searcher {
+        width: 80%;
+        display: inline-block;
+        /* Más ancho para tabletas */
+    }
+
+    main .container .searcher input {
+        width: 89%;
+        color: whitesmoke;
+        border: none;
+        background-color: transparent;
+    }
+
+    .circle-image-container {
+        width: 60px;
+        /* Íconos más pequeños para tabletas */
+        height: 60px;
+    }
+    #rightMenu{
+        display: none;
+    }
+}
+
+/* Para móviles */
+@media screen and (max-width: 480px) {
+    main .container {
+        /* Ajusta el tamaño y el espacio para móviles */
+        gap: 20px;
+    }
+
+    main .container figure {
+        height: 100px;
+        /* Tamaño más pequeño para móviles */
+    }
+
+    main .container figure img {
+        height: 100%;
+        /* Ajusta si es necesario */
+    }
+
+    main .container .searcher {
+        width: 90%;
+        /* Más ancho para móviles */
+    }
+
+    .circle-image-container {
+        width: 50px;
+        /* Íconos más pequeños para móviles */
+        height: 50px;
+    }
+
+    .circles-links {
+        max-width: 100%;
+        /* Permite que los íconos se ajusten al ancho completo en dispositivos móviles */
+    }
+}
+
+@media screen and (max-width: 1540px) {
+    main {
+        position: relative;
+        top: 6%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    main .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 24px;
+        width: 60%;
+        /* margin-top: -56px; */
+    }
+
+    .searchlogo {
+        width: 46% !important;
+        min-width: 300px;
+    }
+
+    .circle-image-container {
+        /* Ajusta el tamaño de la imagen según sea necesario */
+        height: 68px;
+        /* Ajusta el tamaño de la imagen según sea necesario */
+        border-radius: 50%;
+        overflow: hidden;
+        margin-bottom: 5px;
+        /* Ajusta según sea necesario para el espacio entre la imagen y el texto */
+    }
+    .options{
+        margin-right: 15px;
+    }
+    .entra{
+        margin-top: 10px;
+    }
+    .column{
+        margin-top:3rem;
+        padding-left:3rem !important;
+        &:hover{
+          padding-left:0rem !important;
+        }
+    }
+    .cards{
+        margin-top: 50px;
+        margin-left: -45px;
+    }
+    .card{
+        background-color: transparent !important;
+        color: white;
+        margin-left:20%;
+        text-decoration:none;
+    
+    }
+    .cardInfo{
+        overflow:hidden;
+        white-space:nowrap;
+        width: 296px;
+        text-align: left;
+    }
+    .eventos{
+        transform: rotate(-90deg);
+         color: white;
+         margin: 320px -40px;
+     }
+}
+
+
+.weatherwidget-io {
+    min-width: 500px;
+    height: auto;
+}
+
+.weather {
+    min-width: 500px;
+
+}
+
+.searchlogo {
+    max-width: 700px !important;
+    width: 60%;
+
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #005cb9 !important;
+    border-color: #005cb9 !important;
+}
+
+.btn-change:hover{
+    -webkit-transform: scale(1.1);
+    background: #31708f;
+}
+
+.options{
+    margin-right: 15px;
+}
+.entra{
+    margin-top: 25px;
+}
+
+/* Bootstrap cards */
+@import url('https://fonts.googleapis.com/css?family=Oswald:300,400,500,700');
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800');
+
+
+.gr-1{background: linear-gradient(170deg, #2daecf 0%, #0a5e96 100%);}
+
+
+*{transition: .5s;}
+
+.h-100{height: 100vh !important;}
+.align-middle{
+  position: relative;
+  top:50%;
+  transform:translateY(-50%);
+}
+
+/* Animación texto de Cards */
+
+  @keyframes moverDerecha {
+    to {
+      transform: translateX(-100%); 
+    }
+}
+
+.overflowed:hover{
+        animation: moverDerecha 5s linear infinite; 
+  }
